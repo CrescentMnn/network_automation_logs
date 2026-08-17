@@ -6,7 +6,7 @@ The project will make use of various different components, the core of which are
 
 ## Network Topology Design
 
-For this project the created architeture and topology were simlpe, as it only consisted of the Default VLAN (1) and two network devices, as no additional segmentation was required the topology consisted of only one subnet `192.168.1.0/24` in which i grouped the end devices to `192.168.1.1-252` and the network devices used `192.168.1.254` and `192.168.1.253` accordingly,the Network topology is described in the following figure:
+For this project the created architeture and topology were simlpe, as it only consisted of the Default VLAN (VLAN 1) and two network devices, as no additional segmentation was required the topology consisted of only one subnet `192.168.1.0/24` in which i grouped the end devices to `192.168.1.1-192.168.1.252` and the network devices used `192.168.1.254` and `192.168.1.253` accordingly,the Network topology is described in the following figure:
 
 ![Network Topology](https://github.com/CrescentMnn/network_automation_logs/blob/master/misc/NetworkTopology.png)
 
