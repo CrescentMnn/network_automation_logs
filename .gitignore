@@ -1,0 +1,5 @@
+/venv
+*.private
+__pychache__/
+.env
+*.log
