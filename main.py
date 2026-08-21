@@ -1,12 +1,13 @@
 import mariadb
+import secrets.py
 from netmiko import ConnectHandler
 
 #connect db
 connector = mariadb.connect{
-        'host': 'localhost',
-        'port': 3306,
-        'user': 'your_username',
-        'password': 'your password',
+        'host': secrets.database_host,
+        'port': secrets.database_port,
+        'user': secrets.database_user,
+        'password': secrets.database_password,
         'database': 'automated_network_config'
 }
 
@@ -19,11 +20,11 @@ cursor = connector.cursor()
 
 cisco_2900 = {
     'device_type' = 'cisco_ios'
-    'host' = '192.168.1.253'
-    'username' = 'admin'
-    'password' = 'password'
-    'port' = '8022'
-    'secret' = 'cisco'
+    'host' = secrets.cisco_ip
+    'username' = secrets.cisco_user
+    'password' = secrets.cisco_password
+    'port' = secrets.cisco_port
+    'secret' = secrets.cisco_secret
 }
 
 #DEVICE INFORMATION ***** STATIC FOR NOW FOR ALL DEVICES RUNNING SCRIPT DIFFERENT VALUES
